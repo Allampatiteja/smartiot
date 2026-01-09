@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "author": "A.thirumala teja",
+  "editor": "GRK",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": -192, "left": -206.36, "attrs": {} },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": -304.8,
+      "left": 88.2,
+      "attrs": { "volume": "0.5" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "bz1:2", "esp:18", "green", [ "v0" ] ],
+    [ "bz1:1", "esp:GND.2", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
