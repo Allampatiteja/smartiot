@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "author": "A.thirumalateja",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 4.7, "left": -43.4, "attrs": {} },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "ultrasonic1",
+      "top": -276.9,
+      "left": -368.9,
+      "attrs": { "distance": "222" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "ultrasonic1:GND", "esp:GND.1", "black", [ "v-0.33", "h49.22", "v178.7" ] ],
+    [ "ultrasonic1:VCC", "esp:3V3", "red", [ "v9.57", "h97.36", "v171.56" ] ],
+    [ "ultrasonic1:TRIG", "esp:D13", "green", [ "v-0.33", "h-72.65", "v169.91" ] ],
+    [ "ultrasonic1:ECHO", "esp:D12", "green", [ "v20.02", "h-93.09", "v135.27" ] ]
+  ],
+  "dependencies": {}
+}
