@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "author": "A thirumala teja",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 102.2,
+      "left": -96,
+      "attrs": { "color": "green" }
+    },
+    { "type": "wokwi-led", "id": "led1", "top": 70, "left": 140.86, "attrs": { "color": "red" } }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "led1:C", "esp:GND.1", "green", [ "v0" ] ],
+    [ "led1:A", "esp:D2", "green", [ "v0" ] ],
+    [ "btn1:1.r", "esp:D25", "green", [ "v0" ] ],
+    [ "btn1:2.r", "esp:GND.2", "black", [ "v18.87", "h32.27" ] ]
+  ],
+  "dependencies": {}
+}
