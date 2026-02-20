@@ -1,0 +1,32 @@
+{
+	"folders": [
+		{
+			"path": "../../pratical4_temp_oled"
+		},
+		{
+			"name": "skill-5_buzzer",
+			"path": "../../skill-5_buzzer"
+		},
+		{
+			"name": "skill6 sensor ultrasonic",
+			"path": "../../skill6 sensor ultrasonic"
+		},
+		{
+			"name": "pratice_5",
+			"path": "../../pratice_5"
+		},
+		{
+			"name": "skill7_ir_simulation_through_switch",
+			"path": "../../skill7_ir_simulation_through_switch"
+		},
+		{
+			"name": "skill 8 soil",
+			"path": ".."
+		},
+		{
+			"name": "skill12",
+			"path": "../../skill12"
+		}
+	],
+	"settings": {}
+}
